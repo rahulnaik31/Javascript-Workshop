@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Valiadation</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container">
+	<h1>Form validation</h1>
+	<br>
+<form>
+	<input class="form form-control" placeholder="Enter Name" type="text" name="name" id="name" oninput="validateAlphabet(this);" required>
+	<br>
+	<input  class="form form-control" placeholder="Enter Roll No"  type="text" name="rollno" id="rollno" oninput="validateNumber(this);" required>
+	<br>
+	<input  class="form form-control" placeholder="Enter Email"  type="text" name="email" id="email" onblur="validateEmail(this);" required>
+	<br>
+	<input  class="form form-control" placeholder="Enter Phone No"  type="text" name="phoneno" id="phoneno" onblur="validatePhonenumber(this);" required>
+	<br>
+	<input  class="form form-control" placeholder="Enter DOB"  type="date" name="dob" id="dob" onblur="validateDOB(this);" required>
+	<br>
+	<input  class="form form-control" placeholder="Enter Password"  type="password" name="password" id="password" onblur="validatePassword(this);" required>
+	<label class="form">[6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter]</label>
+	<br>
+	<input  class="form form-control" placeholder="Retype Password"  type="password" name="repassword" id="repassword" onblur="validateRePassword(this);" required>
+	<br>
+	<input  class="form form-control"  type="submit" name="submit">
+</form>
+<script src="Exercise3.js"></script>
+</body>
+</html>
