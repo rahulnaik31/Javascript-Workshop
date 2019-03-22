@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Variables & Data Types</title>
+</head>
+
+<body>
+    <h3>JS Code here, open up the console</h3>
+</body>
+<script>
+    // This is how you create variables in JavaScript
+    var a = 10 // Number
+    var s = "Hello" // String
+    var f // undefined
+
+    console.log("a = " + a)
+    console.log("s = " + s)
+    console.log("f = " + f)
+
+    // Types
+    console.log("a is " + typeof(a))
+    console.log("s is " + typeof(s))
+    console.log("f is " + typeof(f))
+
+    // Since JavaScript is weakly typed, you can do this
+    a = s
+    console.log("a = " + a)   // It works! 
+
+    // Naming variables
+    var a2_$ = 20.01 // can have letters, numbers, underscores and dollar
+    var $a = "$" + 5 // must start with letter dollar or underscore
+    var A = 5 + "5" // they are case sensitive
+
+    console.log("a2_$ = " + a2_$)
+    console.log("$a = " + $a)
+    console.log("A = " + A)
+
+    // You can declare like this too
+    var x = 1, y = 2, z = 3
+
+    console.log(" x = " + x + " y = " + y + " z = " + z)
+
+    // Or
+    var u = 4,
+        v = 5,
+        w = 6
+
+    console.log(" u = " + u + " v = " + v + " w = " + w)
+
+    // Objects
+    var person = {fName: "John", lName: "Snow"}
+    console.log("Person: " + person.fName + " " + person.lName)
+
+</script>
+
+</html>

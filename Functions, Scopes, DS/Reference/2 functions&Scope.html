@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Functions & Scope</title>
+</head>
+
+<body>
+    <h3>JS Code here, open up the console</h3>
+</body>
+<script>
+
+    // This is how you create a function
+    function justAFunction() {
+        console.log("Inside the function")
+    }
+
+    // Don't forget to call it!
+    justAFunction()
+
+    console.log("Outside the function")
+
+    // This is how you can add parameters to a function
+    function addTwoNumbers(a, b) {
+        return a + b
+    }
+
+    // Let's add some numbers
+    console.log("2 + 3 = " + addTwoNumbers(2, 3))
+
+    // Global Variable
+    var number = 10
+
+    // Function Scope
+    function scopeOfVariables(name = "Joe") {
+        // local variable
+        var magicNumber = 404
+        console.log("Name: " + name)
+        console.log("Number: " + number)
+        console.log("Magic Number: " + magicNumber)
+    }
+    
+    scopeOfVariables()
+    console.log("Outside Function magicNumber: " + magicNumber)
+
+</script>
+
+</html>
